@@ -1,5 +1,324 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+:root {
+  --main-color: #000028;
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --text-color: #F1B2CE;
+  --main-paddings: 10px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --main-paddings: 20px;
+  }
+  
+}
 
 .page {
+  display: grid;
+
+
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.header {
+  display: grid;
+  min-block-size: 100vh;
+  inline-size: 100%;
+  padding: var(--main-paddings);
+}
+
+
+.decorated-zone {
+  display: grid;
+  align-content: space-between;
+}
+
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__rec {
+  display: flex;
+  justify-self: end;
+  color: var(--accent-color);
+  align-items: center;
+  margin-block-end: 40.5px;
+}
+
+.header__rec::after {
+  content: "";
+  width: 25.038px;
+  height: 24.999px;
+  margin-inline-start: 3px;
+  background-image: url(/images/Ellipse\ 4.svg);
+  background-position: center;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  width: 70px;
+  height: 26px;
+  border: none;
+  background: transparent;
+}
+
+.header__theme-menu-button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  text-transform: lowercase;
+  color: var(--accent-color);
+
+}
+
+.header__bottom-border {
+  align-self: start;
+  width: 25.038px;
+  height: 24.999px;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button::hover {
+
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid;
+}
+
+.title {
+  text-align: left;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px var(--accent-color);
+  font-size: 116px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  margin: 65px 0 55px;
+}
+
+.header__description {
+  flex-shrink: 0;
+  width: 100%;
+  justify-self: end;
+  background: var(--accent-color);
+  color: var(--main-color);
+  text-align: left;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin-bottom: 31px;
+}
+
+.section {
+  display: grid;
+  padding: 0 var(--main-paddings);
+  color: var(--accent-color);
+  gap: 10px;
+}
+
+@media (width >= 768px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .header__description {
+    width: 50%;
+  }
+}
+
+@media (width >= 1024px) {
+
+
+
+}
+
+
+
+
+
+.section__title {
+  text-align: left;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin-block-end: 10px;
+}
+
+.section__theme {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  text-align: left;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+
+}
+
+.section__theme-thin {
+  font-weight: 400;
+}
+
+.section__text {
+  text-align: left;
+  color: var(--text-color);
+  margin-block-end: 10px;
+}
+
+
+
+.section__concentrate-why {
+  margin-block-start: 30px; 
+}
+@media (width >= 768px) {
+  .section__concentrate-why .section__title{
+    grid-row: 2 span ;
+    margin-inline-end: 10px;
+  }
+  .section__concentrate-why .section__theme {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .section__concentrate-why .section__text {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+.section__concentrate-what {
+  margin-block-start: 40px;
+
+}
+
+@media (width >= 768px) {
+  .section__concentrate-what .section__title {
+    grid-column-start: 1;
+  }
+  .section__concentrate-what .section__theme {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .section__concentrate-what .section__text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+  }
+}
+
+
+.section__concentrate-how {
+  margin-block-start: 40px;
+}
+
+.section__concentrate-how h3 {
+  margin-block-end: 10px;
+}
+
+@media (width >= 768px) {
+  .section__concentrate-how .section__title{
+    grid-row: 3 span ;
+  }
+  .section__concentrate-how .section__theme {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .section__concentrate-how .section__text {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+
+.section__pictures {
+  
+  margin: 50px 0 50px;
+  gap: 10px;
+}
+
+@media (width >= 768px) {
+  .section__pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .picture__galery {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    'sunset sunset ice-cream'
+    'tape books ice-cream'
+    'tape street street';
+  }
+  .picture__sunset {
+    grid-area: sunset;
+    object-fit: contain;
+  }
+  .picture__ice-cream {
+    grid-area: ice-cream;
+    object-fit: cover;
+  }
+  .picture__tape {
+    grid-area: tape;
+    object-fit: cover;
+  }
+  .picture__books {
+    grid-area: books;
+    object-fit: contain;
+  }
+  .picture__street {
+    grid-area: street;
+    object-fit: contain;
+  }
+}
+
+
+.picture {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-block-size: 100vh;
+  padding: var(--main-paddings);
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px var(--accent-color);
+  font-size: 116px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.footer__top-border {
+  align-self: flex-end;
+  width: 25.038px;
+  height: 24.999px;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+}
+
+.footer__bottom-border {
+  width: 25.038px;
+  height: 24.999px;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
 }
