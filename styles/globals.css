@@ -11,11 +11,17 @@ body {
   max-inline-size: 1440px;
   margin: 0 auto;
   text-align: center;
-  font-family: 'IBM Plex mono', 'Courier New', Courier, monospace;
+  font-family: 'IBM Plex mono', monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
+}
+
+@media (width < 768) {
+  body {
+
+  }
 }
 
 h1,
