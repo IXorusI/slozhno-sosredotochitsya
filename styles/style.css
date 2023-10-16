@@ -1,18 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root {
-  --main-color: #000028;
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --text-color: #F1B2CE;
-  --main-paddings: 10px;
-}
-
-@media (width >= 768px) {
-  :root {
-    --main-paddings: 20px;
-  }
-  
-}
 
 .page {
   display: grid;
@@ -101,6 +87,8 @@
   color: var(--title-color);
   text-shadow: 4px 4px 0px var(--accent-color);
   font-size: 116px;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  margin-left: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
@@ -136,6 +124,11 @@
 
   .header__description {
     width: 50%;
+  }
+
+  .title {
+    position: relative;
+    left: -20px;
   }
 }
 
@@ -204,7 +197,7 @@
 
 }
 
-@media (width >= 768px) {
+@media (1024px > width >= 768px) {
   .section__concentrate-what .section__title {
     grid-column-start: 1;
   }
@@ -218,6 +211,28 @@
 
   }
 }
+
+@media (width >= 1024px) {
+  .section__concentrate-what {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section__concentrate-what .section__title {
+    display: flex;
+    grid-column-start: 1;
+  }
+  .section__concentrate-what .section__theme {
+    grid-row-start: 2;
+    display: flex;
+  }
+  .section__concentrate-what .section__text {
+    display: flex;
+    grid-row-start: 3;
+  }
+}
+
 
 
 .section__concentrate-how {
@@ -303,6 +318,7 @@
   color: var(--title-color);
   text-shadow: 2px 2px 0px var(--accent-color);
   font-size: 116px;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;

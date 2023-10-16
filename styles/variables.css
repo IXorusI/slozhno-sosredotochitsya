@@ -1,3 +1,23 @@
+:root {
+  --main-color: #000028;
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --text-color: #F1B2CE;
+  --main-paddings: 10px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --main-paddings: 20px;
+  }
+  
+}
+
+
+
+
+
+
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
