@@ -18,11 +18,7 @@ body {
   line-height: 25px;
 }
 
-@media (width < 768) {
-  body {
 
-  }
-}
 
 h1,
 h2,
