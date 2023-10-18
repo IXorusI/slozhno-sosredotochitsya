@@ -34,20 +34,24 @@
   display: flex;
   align-items: start;
   justify-self: end;
-  color: var(--accent-color);
+  margin-inline-end: 25px;
+  color: var(--header-nav-color);
   align-items: center;
 }
 
-.header__rec::after {
+.decorated-zone::before {
+  position: absolute;
+  justify-self: end;
   content: "";
   width: 25.038px;
   height: 24.999px;
   margin-inline-start: 3px;
   background-image: url(/images/Ellipse\ 4.svg);
   background-position: center;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--header-nav-color);
+  border-block-start: 1px solid var(--header-nav-color);
 }
+
 
 .header__theme-menu-list {
   display: flex;
@@ -68,7 +72,7 @@
   background: transparent;
   border: none;
   text-transform: lowercase;
-  color: var(--accent-color);
+  color: var(--header-nav-color);
 }
 
 .header__bottom-border {
@@ -77,12 +81,19 @@
   justify-self: start;
   width: 25.038px;
   height: 24.999px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--header-nav-color);
+  border-block-end: 1px solid var(--header-nav-color);
 }
 
-.header__theme-menu-button::hover {
 
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--header-nav-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-block-end: 1px solid var(--header-nav-color) ;
 }
 
 .header__theme-menu-button_active {
@@ -105,8 +116,8 @@
 .title {
   text-align: left;
   color: var(--title-color);
-  text-shadow: 4px 4px 0px var(--accent-color);
-  font-size: 116px;
+  text-shadow: 4px 4px 0px var(--decoration-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
@@ -116,7 +127,7 @@
   width: 100%;
   justify-self: end;
   align-self: center;
-  background: var(--accent-color);
+  background: var(--bg-theme-color);
   color: var(--main-color);
   text-align: left;
   font-size: 18px;
@@ -160,6 +171,7 @@
 
 
 .section__title {
+  color: var(--theme-title-color);
   text-align: left;
   font-size: 18px;
   font-style: normal;
@@ -169,7 +181,7 @@
 }
 
 .section__theme {
-  background-color: var(--accent-color);
+  background-color: var(--bg-theme-color);
   color: var(--main-color);
   text-align: left;
   font-size: 18px;
@@ -192,9 +204,17 @@
 
 .section__text-link {
   text-decoration: none;
-  text-shadow: 2px 1px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px var(--bg-theme-color);
 }
 
+.section__text-link:hover {
+  border-block-end: 1px solid var(--accent-color);
+}
+
+.section__text-link:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
 
 .section__concentrate-why {
   margin-block-start: 30px; 
@@ -360,7 +380,7 @@
   min-block-size: 100vh;
   padding: var(--main-paddings);
   color: var(--title-color);
-  text-shadow: 2px 2px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px var(--decoration-color);
   font-size: 116px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
@@ -372,13 +392,13 @@
   align-self: flex-end;
   width: 25.038px;
   height: 24.999px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--header-nav-color);
+  border-block-start: 1px solid var(--header-nav-color);
 }
 
 .footer__bottom-border {
   width: 25.038px;
   height: 24.999px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--header-nav-color);
+  border-block-end: 1px solid var(--header-nav-color);
 }

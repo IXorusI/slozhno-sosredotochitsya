@@ -2,8 +2,11 @@
   --main-color: #000028;
   --title-color: #DB00FF;
   --accent-color: #FF0070;
+  --decoration-color: #FF0070;
   --text-color: #F1B2CE;
   --main-paddings: 10px;
+  --bg-theme-color: ;
+  
 }
 
 @media (width >= 768px) {

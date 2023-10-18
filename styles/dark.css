@@ -6,25 +6,9 @@
 
 .page.theme_dark {
   background: url(../images/cover-image-dark.png), lightgray 50% / cover no-repeat;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+  --header-nav-color: var(--accent-color);
+  --bg-theme-color: var(--accent-color);
+  --theme-title-color: var(--accent-color);
 
 
   /* сохраните этот селектор в приведённом виде.
