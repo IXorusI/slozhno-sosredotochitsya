@@ -38,7 +38,7 @@
 
 
 @media (prefers-color-scheme: light) {
-  :root .theme_auto{
+  :root .theme_auto {
     --main-color: #353430;
     --title-color: #FFC2E6;
     --bg-theme-color: #FF8DCB;
@@ -62,7 +62,7 @@
   }
 
   @media (width >= 768px) {
-    :root .theme_auto{
+    :root .theme_auto {
       --decoration-color: #FF0070;
     }
   }
