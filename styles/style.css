@@ -210,7 +210,7 @@
 
 .section__text-link:focus {
   outline: none;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--text-color);
 }
 
 .section__concentrate-why {

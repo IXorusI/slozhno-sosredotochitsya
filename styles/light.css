@@ -3,7 +3,12 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
+:root .theme_light {
+  --main-color: #353430;
+  --title-color: #FFC2E6;
+  --bg-theme-color: #FF8DCB;
+  --decoration-color: #FF8DCB;
+}
 .page.theme_light {
   background: var(--bg-image);
   --bg-image: url(../images/cover-image-light.png), lightgray 50% / cover no-repeat;
@@ -19,7 +24,7 @@
     background-image: none;
   }
 
-  @media (width >= 768px) {
+  @media (width > 768px) {
     --decoration-color: #FF0070;
   }
 
@@ -29,12 +34,6 @@
   */
 }
 
-:root .theme_light {
-  --main-color: #353430;
-  --title-color: #FFC2E6;
-  --bg-theme-color: #FF8DCB;
-  --decoration-color: #FF8DCB;
-}
 
 
 @media (prefers-color-scheme: light) {
@@ -61,7 +60,7 @@
     background-image: none;
   }
 
-  @media (width >= 768px) {
+  @media (width > 768px) {
     :root .theme_auto {
       --decoration-color: #FF0070;
     }
