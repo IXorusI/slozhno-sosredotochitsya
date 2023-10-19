@@ -1,7 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  
+  background: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 
 
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -89,13 +92,14 @@
   border: 1px solid var(--header-nav-color);
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
   outline: none;
   border-block-end: 1px solid var(--header-nav-color) ;
 }
 
 .header__theme-menu-button_active {
   border: 1px solid;
+  pointer-events: none;
 }
 
 @media (width >= 1024px) {
