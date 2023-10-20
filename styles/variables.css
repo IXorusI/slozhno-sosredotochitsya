@@ -4,6 +4,7 @@
   --accent-color: #FF0070;
   --decoration-color: #FF0070;
   --text-color: #F1B2CE;
+  --button-hover-color: rgba(255, 0, 112, 0.40);
   --main-paddings: 10px;
   --header-nav-color: var(--accent-color);
   --bg-theme-color: var(--accent-color);

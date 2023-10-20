@@ -21,6 +21,7 @@
   --accent-color: #FF0070;
   --decoration-color: #FF0070;
   --text-color: #F1B2CE;
+  --button-hover-color: rgba(255, 0, 112, 0.40);
   --bg-image: url(../images/cover-image-dark.png), lightgray 50% / cover no-repeat;
 
 }
@@ -32,24 +33,12 @@
     --accent-color: #FF0070;
     --decoration-color: #FF0070;
     --text-color: #F1B2CE;
+    --button-hover-color: rgba(255, 0, 112, 0.40);
     --bg-image: url(../images/cover-image-dark.png), lightgray 50% / cover no-repeat;
 
   }
 
   .header__rec {
     display: flex;
-  }
-
-  .decorated-zone::before {
-    position: absolute;
-    justify-self: end;
-    content: "";
-    width: 25.038px;
-    height: 24.999px;
-    margin-inline-start: 3px;
-    background-image: url(/images/Ellipse\ 4.svg);
-    background-position: center;
-    border-inline-end: 1px solid var(--header-nav-color);
-    border-block-start: 1px solid var(--header-nav-color);
   }
 }
