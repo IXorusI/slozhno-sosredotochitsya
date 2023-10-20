@@ -47,7 +47,7 @@
     --header-nav-color: var(--text-color);
     --theme-title-color: var(--main-color);
     --decoration-color: #FF8DCB;
-
+    --button-hover-color: rgba(50, 49, 45, 0.40);
   }
 
   .page {
