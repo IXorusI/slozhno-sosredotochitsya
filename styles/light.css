@@ -13,6 +13,7 @@
 }
 .page.theme_light {
   background: var(--bg-image);
+  background-attachment: fixed;
   --bg-image: url(../images/cover-image-light.png), lightgray 50% / cover no-repeat;
   --text-color: var(--main-color);
   --header-nav-color: var(--text-color);
@@ -52,6 +53,7 @@
 
   .page {
     --bg-image: url(../images/cover-image-light.png), lightgray 50% / cover no-repeat;
+    background-attachment: fixed;
   }
 
   .theme_auto .header__rec {
