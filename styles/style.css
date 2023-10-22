@@ -187,7 +187,6 @@
 
 .section_concentrate_what .section__title {
   grid-column-start: 1;
-  width: 33%;
 }
 .section_concentrate_what .section__theme {
   grid-column-start: 1;
@@ -299,6 +298,9 @@
   .section_concentrate_what {
     margin-block-start: 70px;
     grid-template-columns: 1fr;
+  }
+  .section_concentrate_what .section__title {
+    width: 33%;
   }
 
   .section_concentrate_how {
